@@ -8,6 +8,7 @@ import rain_icon from '../assets/rain.png'
 import snow_icon from '../assets/snow.png'
 import wind_icon from '../assets/wind.png'
 import humidity_icon from '../assets/humidity.png'
+import bg from '../assets/bg.jpg'
 
 
 export const WeatherApp = () => {
@@ -63,6 +64,7 @@ const [wicon,setWicon] = useState(cloud_icon);
 
 
   return (
+    <div style={{ backgroundImage: `url(${bg})` }}>
     <div className='container'>
       <div className='top-bar'>
        <input type="text" className="cityInput" placeholder='search' />
@@ -92,6 +94,7 @@ const [wicon,setWicon] = useState(cloud_icon);
         </div>
       </div>
 
+    </div>
     </div>
   )
 }

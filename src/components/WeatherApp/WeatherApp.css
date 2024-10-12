@@ -1,3 +1,7 @@
+body{
+    background-image: bg;
+}
+
 .container{
     width: 607px;
     height: 829px;
